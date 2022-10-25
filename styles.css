@@ -201,7 +201,7 @@ main {
   font-size: 1.2rem;
 }
 .powerstats .powerstats-items .progress-bar {
-  width: 100%;
+  width: 80%;
   height: 1rem;
   background-color: #730606;
   border-radius: 15px;
@@ -216,6 +216,9 @@ main {
   .powerstats .powerstats-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .progress-bar {
+    width: 100% !important;
   }
 }
 .biography {
