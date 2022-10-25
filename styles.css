@@ -201,13 +201,12 @@ main {
   font-size: 1.2rem;
 }
 .powerstats .powerstats-items .progress-bar {
-  width: 80%;
+  width: 100%;
   height: 1rem;
   background-color: #730606;
   border-radius: 15px;
 }
 .powerstats .powerstats-items .progress-bar .progress-bar-inner {
-  width: 70%;
   height: inherit;
   background-color: #d9981e;
   border-radius: 15px;

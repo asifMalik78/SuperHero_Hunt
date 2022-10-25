@@ -217,13 +217,11 @@ main {
       font-size: 1.2rem;
     }
     .progress-bar {
-      width: 80%;
+      width: 100%;
       height: 1rem;
       background-color: #730606;
       border-radius: 15px;
-
       .progress-bar-inner {
-        width: 70%;
         height: inherit;
         background-color: #d9981e;
         border-radius: 15px;
@@ -238,7 +236,9 @@ main {
       display: grid;
       grid-template-columns: 1fr;
     }
+
   }
+
 }
 
 .biography {

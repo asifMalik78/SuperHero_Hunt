@@ -53,7 +53,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Intelligence</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.intelligence};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.intelligence}%;">
                   </div>
               </div>
           </div>
@@ -61,7 +61,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Strength</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.strength};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.strength}%;">
                   </div>
               </div>
           </div>
@@ -69,7 +69,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Speed</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.speed};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.speed}%;">
                   </div>
               </div>
           </div>
@@ -77,7 +77,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Durability</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.durability};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.durability}%;">
   
                   </div>
               </div>
@@ -86,7 +86,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Power</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.power};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.power}%;">
   
                   </div>
               </div>
@@ -94,7 +94,7 @@ function createElement(obj) {
           <div class="powerstats-items">
               <h3>Combat</h3>
               <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width:${obj.powerstats.combat};">
+                  <div class="progress-bar-inner" style="width:${obj.powerstats.combat}%;">
   
                   </div>
               </div>
