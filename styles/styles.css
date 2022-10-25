@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+
+body {
+  background-color: #06283d;
+  max-width: 1535px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #121b34;
+  padding: 0.2 1.5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1136px) {
+  nav {
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 40px;
+  }
+}
+.left {
+  font-size: 3.4rem;
+  font-family: "Permanent Marker", cursive !important;
+}
+.left .first {
+  color: #730606;
+}
+.left .second {
+  color: #d9981e;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: #ffffff;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.right .search-bar {
+  width: 38rem;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: none;
+  color: #121212;
+}
+.right .search-icon .fa {
+  color: #121212;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .right .search-bar {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 583px) {
+  .right .search-bar {
+    width: 26rem;
+  }
+}
+@media screen and (max-width: 482px) {
+  .right .search-bar {
+    width: 100%;
+  }
+}
+.search-results {
+  display: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  max-height: 600px;
+  top: 102%;
+  overflow-y: scroll;
+}
+.search-results .search-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+.search-results .search-lists-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  cursor: pointer;
+  padding: 6px;
+}
+.search-results .search-lists-items:hover {
+  background-color: #f2f2f2;
+}
+.search-results .search-lists-items .search-image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.search-results .search-lists-items .search-image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.search-results .search-lists-items .information {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+main {
+  padding: 0 6rem;
+}
+
+@media screen and (max-width: 1136px) {
+  main {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+.superhero-name-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.superhero-name-image-wrapper h1 {
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.superhero-name-image-wrapper .superhero-image-container {
+  height: 400px;
+  width: 300px;
+}
+.superhero-name-image-wrapper .superhero-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+  border: 3px solid red;
+}
+
+.powerstats {
+  margin: 80px 0;
+}
+.powerstats h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.powerstats .powerstats-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.powerstats .powerstats-items h3 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.2rem;
+}
+.powerstats .powerstats-items .progress-bar {
+  width: 80%;
+  height: 1rem;
+  background-color: #730606;
+  border-radius: 15px;
+}
+.powerstats .powerstats-items .progress-bar .progress-bar-inner {
+  width: 70%;
+  height: inherit;
+  background-color: #d9981e;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1136px) {
+  .powerstats .powerstats-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.biography {
+  margin: 80px 0;
+}
+.biography h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.biography .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.biography .content-wrapper p {
+  margin: 10px 0;
+  color: #d9981e;
+}
+.biography .content-wrapper .heading {
+  color: #f12121;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 538px) {
+  .biography .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.appearance {
+  margin: 80px 0;
+}
+.appearance h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.appearance .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.appearance .content-wrapper p {
+  margin: 10px 0;
+  color: #d9981e;
+}
+.appearance .content-wrapper .heading {
+  text-transform: capitalize;
+  color: #f12121;
+}
+
+.work {
+  margin: 80px 0;
+}
+.work h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.work .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.work .content-wrapper p {
+  margin: 10px 0;
+  color: #d9981e;
+}
+.work .content-wrapper .heading {
+  text-transform: capitalize;
+  color: #f12121;
+}
+
+.connection {
+  margin: 80px 0;
+}
+.connection h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.connection .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.connection .content-wrapper p {
+  margin: 10px 0;
+  color: #d9981e;
+}
+.connection .content-wrapper .heading {
+  text-transform: capitalize;
+  color: #f12121;
+}
+
+@media screen and (max-width: 538px) {
+  .connection .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */
